@@ -1,5 +1,4 @@
 from langchain.chains import ConversationChain
-# from langchain.chat_models import ChatOpenAI
 import openai
 from langchain_openai import ChatOpenAI
 # from langchain_core.runnables.history import RunnableWithMessageHistory
@@ -7,10 +6,8 @@ from langchain_openai import ChatOpenAI
 # # Example of replacement
 # chat_history = RunnableWithMessageHistory(llm=chat)
 
-
 # Initialize ChatOpenAI with the API key
-# chat = ChatOpenAI(model="gpt-3.5-turbo", temperature=0, openai_api_key="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")
-chat = ChatOpenAI(model="gpt-3.5-turbo", temperature=0, openai_api_key="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")
+chat = ChatOpenAI(model="gpt-3.5-turbo", temperature=0, openai_api_key="your_openai_api_key")
 chain = ConversationChain(llm=chat)
 
 def get_response(question):
