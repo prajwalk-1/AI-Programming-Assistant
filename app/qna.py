@@ -1,10 +1,6 @@
 from langchain.chains import ConversationChain
 import openai
 from langchain_openai import ChatOpenAI
-# from langchain_core.runnables.history import RunnableWithMessageHistory
-
-# # Example of replacement
-# chat_history = RunnableWithMessageHistory(llm=chat)
 
 # Initialize ChatOpenAI with the API key
 chat = ChatOpenAI(model="gpt-3.5-turbo", temperature=0, openai_api_key="your_openai_api_key")
